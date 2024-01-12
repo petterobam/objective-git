@@ -19,7 +19,7 @@ function setup_build_environment ()
     CPP="${CLANG} -E"
 
     # We need to clear this so that cmake doesn't have a conniption
-    MACOSX_DEPLOYMENT_TARGET=""
+    MACOSX_DEPLOYMENT_TARGET="10.14"
 
     XCODE_MAJOR_VERSION=$(xcode_major_version)
 
